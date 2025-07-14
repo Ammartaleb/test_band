@@ -1,6 +1,6 @@
-import 'package:test_band/features/auth/domain/entities/gender_entity.dart';
-import 'package:test_band/features/auth/domain/entities/governorate_entity.dart';
-import 'package:test_band/features/auth/domain/entities/grade_entity.dart';
+import 'package:test_band/features/signup/model/gender_model.dart';
+import 'package:test_band/features/signup/model/governorate_model.dart';
+import 'package:test_band/features/signup/model/grade_model.dart';
 
 class AppValidators {
   String? validatePhoneNumberInputField({required String? input}) {
@@ -40,7 +40,7 @@ class AppValidators {
     return null;
   }
 
-  String? validateGovernorateField({required GovernorateEntity? input}) {
+  String? validateGovernorateField({required GovernorateModel? input}) {
     if (input == null) {
       return "يرجى اختيار المحافظة";
     }
@@ -54,14 +54,14 @@ class AppValidators {
     return null;
   }
 
-  String? validateEducationalGradeField({required GradeEntity? input}) {
+  String? validateEducationalGradeField({required GradeModel? input}) {
     if (input == null) {
       return "يرجى اختيار المرحلة الدراسية";
     }
     return null;
   }
 
-  String? validateGenderField({required GenderEntity? input}) {
+  String? validateGenderField({required GenderModel? input}) {
     if (input == null) {
       return "يرجى اختيار الجنس";
     }

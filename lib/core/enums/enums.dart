@@ -9,3 +9,5 @@ enum AppFontWeight {
   extraBold,
   black,
 }
+
+enum RequestStates { loading, success, failed }

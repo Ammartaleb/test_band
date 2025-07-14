@@ -20,6 +20,9 @@ class AppTheme {
         ),
       ),
     ),
+    datePickerTheme: const DatePickerThemeData(
+      backgroundColor: AppColors.kWhite,
+    ),
     iconButtonTheme: IconButtonThemeData(
       style: ButtonStyle(
         padding: WidgetStateProperty.all<EdgeInsets>(

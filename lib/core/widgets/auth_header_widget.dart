@@ -17,7 +17,7 @@ class AuthHeaderWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: context.width(),
-      height: 259, // adjust height as needed
+      height: 259,
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [Color(0xFF1C164F), Color(0xFF2A2172)],
@@ -27,7 +27,6 @@ class AuthHeaderWidget extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // Image 1 (e.g. decorative background shape)
           Positioned(
             top: 0,
             right: 0,
@@ -38,7 +37,6 @@ class AuthHeaderWidget extends StatelessWidget {
             ),
           ),
 
-          // Image 2 (e.g. logo in the corner)
           Positioned(
             top: 0,
             left: 0,
@@ -49,7 +47,6 @@ class AuthHeaderWidget extends StatelessWidget {
             ),
           ),
 
-          // Header content
           Positioned.fill(
             child: Padding(
               padding: const EdgeInsets.all(24),

@@ -1,4 +1,3 @@
-// Abstract base text style class
 import 'package:flutter/material.dart';
 import 'package:test_band/core/enums/enums.dart';
 import 'package:test_band/core/utils/app_extensions.dart';
@@ -29,7 +28,6 @@ abstract class BaseTextStyle {
   String? get package => null;
   TextOverflow? get overflow => null;
 
-  // Convert to Flutter TextStyle
   TextStyle toTextStyle() {
     return TextStyle(
       color: color,
